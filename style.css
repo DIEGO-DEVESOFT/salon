@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0f4;
+    color: #333;
+}
+
+header {
+    background-color: #d81b60;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center; /* Centra el texto en el footer */
+    padding: 10px; /* Espaciado interno */
+    background-color: #d81b60; /* Color de fondo */
+    color: white; /* Color del texto */
+    position: relative; /* Asegura que el footer esté en la parte inferior */
+    bottom: 0; /* Mantiene el footer en la parte inferior de la página */
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d81b60;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c2185b;
+}
+
+#productos {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0e7f5;
+    border-radius: 8px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    flex: 1 1 300px; /* Crece, encoge y establece un ancho base */
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #d81b60;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.producto h3 {
+    color: #d81b60;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        text-align: center; /* Centra el texto del encabezado */
+    }
+
+    nav ul {
+        padding: 0; /* Elimina el padding del ul */
+        display: inline-block; /* Hace que el ul se muestre como un bloque en línea */
+    }
+
+    nav ul li {
+        display: block; /* Cada enlace en su propia línea */
+        margin: 10px 0; /* Espaciado vertical entre enlaces */
+    }
+}
+
+
+
+
+/* Estilos para el icono de WhatsApp flotante */
+
+.whatsapp-icon2 {
+    position: fixed;
+    bottom: 80px; /* Espaciado desde el fondo */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #d81b60; /* Color verde de WhatsApp */
+    color: rgb(255, 255, 255); /* Color del icono */
+    border-radius: 50%; /* Esquinas redondeadas para ser completamente redondo */
+    width: 50px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    font-size: 30px; /* Tamaño del icono */
+    display: flex; /* Usar flex para centrar el icono */
+    align-items: center; /* Centra verticalmente el icono */
+    justify-content: center; /* Centra horizontalmente el icono */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para el hover */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+.whatsapp-icon2:hover {
+    background-color: #d81b60; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del ícono al pasar el mouse */
+}
+
+/*  Icono para subir la pagina rapido */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Espaciado desde el fondo */
+    right: 20px; /* Espaciado desde la derecha */
+    background-color: #d81b60; /* Color de fondo azul */
+    color: rgb(255, 255, 255); /* Color del icono */
+    border-radius: 50%; /* Esquinas redondeadas para ser completamente redondo */
+    width: 50px; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    display: flex; /* Usar flex para centrar el icono */
+    align-items: center; /* Centra verticalmente el icono */
+    justify-content: center; /* Centra horizontalmente el icono */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s; /* Transición para el hover */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+.scroll-to-top:hover {
+    background-color: #d81b60; /* Color de fondo al pasar el mouse */
+}
+
+
+
+.contact-section8 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+    height: 50vh; /* Altura de la pantalla completa */
+    background-color: #d81b60; /* Cambia el color de fondo si lo deseas */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-text8 {
+    flex: 1;
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 25px;
+}
+
+.whatsapp-button8 {
+    display: inline-flex; /* Para alinear el icono y texto en línea */
+    align-items: left; /* Centra el icono verticalmente */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+
+.whatsapp-button8:hover {
+    background-color: #098127; /* Nuevo color al pasar el mouse */
+}
+
+
+
+.whatsapp-icon-small8 {
+    width: 40px; /* Ajusta el tamaño del icono pequeño */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+
+.servicios10 {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0e7f5;
+    border-radius: 8px;
+}
+
+.titulo-servicio10 {
+    text-align: center;
+    color: #d81b60;
+    margin-bottom: 20px;
+}
+
+.servicios-container10 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio-card10 {
+    flex: 1 1 250px; /* Crece y se adapta en base al espacio disponible */
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #d81b60;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.servicio-card10:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.servicio-titulo10 {
+    color: #d81b60;
+    margin: 0;
+}
+
+.servicio-descripcion10 {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+.sobre-nosotros11 {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f0f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.titulo-sobre11 {
+    color: #d81b60;
+    margin-bottom: 20px;
+}
+
+.contenido-sobre11 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen-salon11 {
+    flex: 1 1 300px; /* Tamaño mínimo para la imagen */
+    border-radius: 8px;
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.texto-sobre11 {
+    flex: 1 1 400px; /* Tamaño mínimo para el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.descripcion-sobre11 {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.mision-vision11 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre misión y visión */
+}
+
+.mision11, .vision11 {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #d81b60;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #d81b60;
+    margin: 0 0 10px;
+}
